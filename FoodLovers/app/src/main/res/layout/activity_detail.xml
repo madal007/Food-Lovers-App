@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="36sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="24dp"
+        android:translationZ="3dp"
+        android:layout_alignBottom="@id/tvCaption"
+        android:textColor="@color/white"
+        tools:text="Mingle"/>
+
+    <ImageView
+        android:id="@+id/icPin"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_alignBottom="@id/rtbStar"
+        android:src="@drawable/ic_baseline_location_on_24"
+        android:translationZ="2dp"
+
+        />
+
+    <TextView
+        android:id="@+id/tvCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_toRightOf="@id/icPin"
+        tools:text="caption"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_alignBottom="@id/rtbStar"
+        android:translationZ="2dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/food1" />
+
+
+    <ImageView
+        android:id="@+id/rtbStar"
+        android:layout_width="80dp"
+        android:layout_height="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:layout_alignBottom="@id/imgView"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/review4" />
+
+    <TextView
+        android:id="@+id/tvdescript"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgView"
+        android:text="คำอธิบาย"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        />
+
+
+</RelativeLayout>
